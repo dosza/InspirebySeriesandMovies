@@ -40,7 +40,6 @@ void simulate(){
 	int thread_args[N_THREADS];
 	pthread_t peoples[N_THREADS];
 
-
 	for(int i = 0; i < N_THREADS;i++){
 		thread_args[i] = i;
 		pthread_create(&peoples[i], NULL, speak_num,(void *)&thread_args[i]);
