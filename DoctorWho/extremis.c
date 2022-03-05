@@ -13,7 +13,14 @@
 #define N 20
 
 void  * speak_num ( void *);
+void simulate();
 
+int main (int argc, char ** argv ){ 
+	simulate();
+	return 0;
+}
+
+// people speak pseudo numbers
 void  * speak_num (void * ref_index ) {
 	int index = (int ) (*(int *) ref_index );
 
@@ -27,7 +34,9 @@ void  * speak_num (void * ref_index ) {
 	pthread_exit(NULL);
 
 }
-int main (int argc, char ** argv ){ 
+
+//create and start  threads (init simulate)
+void simulate(){
 	int thread_args[N_THREADS];
 	pthread_t peoples[N_THREADS];
 
@@ -39,6 +48,4 @@ int main (int argc, char ** argv ){
 
 	for(int i = 0 ; i  < N_THREADS;i++)
 		pthread_join(peoples[i],NULL);
-
-	return 0;
 }
