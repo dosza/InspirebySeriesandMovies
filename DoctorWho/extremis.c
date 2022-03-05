@@ -10,12 +10,12 @@
 void  * speak_num ( void *);
 
 void  * speak_num (void * ref_index ) {
-	//srand(time(NULL));
 	int index = (int ) (*(int *) ref_index );
 	for( int j = 0 ; j < N; j++){
+		srand(time(NULL));
 		int num = rand() % RANGE;
 		printf("person %d : - %d !!\n",index,num);
-		sleep(0);
+		sleep(2);
 	}
 
 	pthread_exit(NULL);
