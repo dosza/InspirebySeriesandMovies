@@ -1,3 +1,8 @@
+/*
+	Author: Daniel Oliveira Souza
+	Description: Simulte four people speak pseudo ramdon numbers (based on Doctor who series 10 episode  6 "Extremis")
+	Date: 03/05/2022
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
