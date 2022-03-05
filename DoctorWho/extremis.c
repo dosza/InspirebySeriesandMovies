@@ -10,7 +10,7 @@
 #include <unistd.h>
 #define RANGE 1048576
 #define N_THREADS 4
-#define N 200
+#define N 20
 
 void  * speak_num ( void *);
 
