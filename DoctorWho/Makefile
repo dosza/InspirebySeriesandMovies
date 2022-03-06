@@ -2,7 +2,6 @@ all:
 	gcc extremis.c -o extremis -pthread
 
 clean:
-	rm extremis
-
+	if  test -f extremis ;then  rm extremis; fi
 debug: 
 	gcc extremis.c -o extremis -g -pthread
