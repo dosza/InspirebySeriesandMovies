@@ -27,7 +27,7 @@ void  * speak_num (void * ref_index ) {
 	for( int j = 0 ; j < N; j++){
 		srand(time(NULL));
 		int num = rand() % RANGE;
-		printf("person %d : - %d !!\n",index,num);
+		printf("person %d : -\t%d !!\n",index,num);
 		sleep(1);
 	}
 
