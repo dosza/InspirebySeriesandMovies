@@ -31,7 +31,6 @@ void  * speak_num (void * ref_index ) {
 	}
 
 	pthread_exit(NULL);
-
 }
 
 //create and start  threads (init simulate)
