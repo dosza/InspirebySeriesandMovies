@@ -5,7 +5,6 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <pthread.h>
 #include <unistd.h>
 #define RANGE 1048576
